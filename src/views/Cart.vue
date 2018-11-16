@@ -37,7 +37,7 @@
                 <v-icon dark color="error">remove_circle</v-icon>
               </v-btn>
               {{ item.quantity }}
-              <v-btn icon small rounded depressed @click.stop="insertCart(item)">
+              <v-btn icon small rounded depressed @click.stop="addCart(item)">
                 <v-icon dark color="success">add_circle</v-icon>
               </v-btn>
               </span>                
@@ -87,7 +87,7 @@
       ...mapActions({
           setStatusDialog   : 'dialog/setStatus',
           setAlert    : 'alert/set',
-          insertCart  : 'cart/insert',
+          addCart  : 'cart/add',
           removeCart  : 'cart/remove',
       }),
       close(){
